@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 50px;
+            row-gap: 5vh;
+        }
+
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+
+        button {
+            width: 25%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: transparent;
+            border: 10px solid transparent;
+
+        }
+        button:hover{
+            border: 10px solid orange;
+            transition: all 0.5s ease-in;
+        }
+
+        img {
+            /* width: inherit; */
+            height: 250px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Оберіть свій варіант</h1>
+        <button><img src="./images/0.png" alt="">ROCK</button>
+        <button><img src="./images/1.png" alt="">PAPER</button>
+        <button><img src="./images/2.png" alt="">SCISSORS</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
